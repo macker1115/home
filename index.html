@@ -1,18 +1,111 @@
 <!DOCTYPE html>
 <html lang="ja">
- <head>
- <meta charset="utf-8">
- <title>macker</title>
- <meta name="description" content="ディスクリプションを入力">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- </head>
- <body>
- <h1>macker home page</h1>
- <h2>Links</h2>
- <h3><a href="https://www.youtube.com/@macker3199" target="_blank">Youtube</a></h3>
- <h3><a href="https://x.com/macker76922094" target="_blank">X(Twitter)</a></h3>
- <h2>Merun Morino Fan Site</h2>
- <h3><a href="https://macker1115.github.io/MerunSongList/" target="_blank">MerunSongList</a></h3>
- <h3><a href="https://docs.google.com/spreadsheets/d/1F8uXi3bhMbw_B5YZBZtaKrYKP5uQ_7KNHkXV0SJfKfQ/edit?usp=sharing" target="_blank">MerunSongList(GoogleSpreadSheet)</a></h3>
- </body>
+<head>
+  <meta charset="utf-8">
+  <title>macker - website</title>
+  <meta name="description" content="macker — YouTube / X / Merun Morino Fan Site">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <header class="hero">
+    <div class="hero__bg">
+      <span class="orb orb--1"></span>
+      <span class="orb orb--2"></span>
+      <span class="orb orb--3"></span>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">welcome to</p>
+      <h1 class="hero__title">macker</h1>
+      <p class="hero__sub">creator / fan</p>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </header>
+
+  <main>
+
+    <section class="section" id="links">
+      <h2 class="section__label">Links</h2>
+      <div class="cards">
+
+        <a class="card card--yt" href="https://www.youtube.com/@macker3199" target="_blank" rel="noopener">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">YouTube</span>
+            <span class="card__handle">@macker3199</span>
+          </span>
+          <span class="card__arrow">→</span>
+        </a>
+
+        <a class="card card--x" href="https://x.com/macker76922094" target="_blank" rel="noopener">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">X (Twitter)</span>
+            <span class="card__handle">@macker76922094</span>
+          </span>
+          <span class="card__arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section section--fan" id="fansite">
+      <h2 class="section__label">Merun Morino Fan Site</h2>
+      <div class="fan-banner">
+        <p class="fan-banner__name">森野めるん</p>
+        <p class="fan-banner__en">Merun Morino</p>
+      </div>
+      <div class="cards">
+
+        <a class="card card--merun" href="https://macker1115.github.io/MerunSongList/" target="_blank" rel="noopener">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+              <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">MerunSongList</span>
+            <span class="card__handle">Web版 曲リスト</span>
+          </span>
+          <span class="card__arrow">→</span>
+        </a>
+
+        <a class="card card--sheet" href="https://docs.google.com/spreadsheets/d/1F8uXi3bhMbw_B5YZBZtaKrYKP5uQ_7KNHkXV0SJfKfQ/edit?usp=sharing" target="_blank" rel="noopener">
+          <span class="card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+              <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 3h5v2h-5V6zm0 4h5v2h-5v-2zm0 4h5v2h-5v-2zM7 6h3v12H7V6z"/>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">MerunSongList</span>
+            <span class="card__handle">Google スプレッドシート版</span>
+          </span>
+          <span class="card__arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 macker</p>
+  </footer>
+
+</body>
 </html>
